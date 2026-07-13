@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourDistro - Find Distro that suits you</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <main class="quiz-card" id="quizCard">
+
+            <div id="quizContent">
+                <header class="card-header">
+                    <span class="brand-badge">🐧 YourDistro</span>
+                    <span class="counter-text" id="questionCounter">1 / 15</span>
+                </header>
+
+                <h2 class="question-title" id="questionTitle">Loading the quiz</h2>
+
+                <div class="options-stack" id="optionsGrid"></div>
+            </div>
+
+            <footer class="card-footer">
+                <div class="nav-controls">
+                    <button class="action-btn" id="prevBtn" disabled>Back</button>
+                    <button class="action-btn" id="skipBtn">Skip</button>
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressBar"></div>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
